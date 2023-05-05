@@ -1,0 +1,68 @@
+\hypertarget{namespacetest}{}\doxysection{test Namespace Reference}
+\label{namespacetest}\index{test@{test}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetest_ac452268ab9f39bbb2cae13788679a156}{myfunction}} (arg1, arg2, kwarg=\textquotesingle{}whatever.\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Documentation Example. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetest_ac452268ab9f39bbb2cae13788679a156}\label{namespacetest_ac452268ab9f39bbb2cae13788679a156}} 
+\index{test@{test}!myfunction@{myfunction}}
+\index{myfunction@{myfunction}!test@{test}}
+\doxysubsubsection{\texorpdfstring{myfunction()}{myfunction()}}
+{\footnotesize\ttfamily def test.\+myfunction (\begin{DoxyParamCaption}\item[{}]{arg1,  }\item[{}]{arg2,  }\item[{}]{kwarg = {\ttfamily \textquotesingle{}whatever.\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Documentation Example. 
+
+This is the example used in the doxypypy documentation. It demonstrates basic docstring usage (including doctests).
+
+Does nothing more than demonstrate syntax.
+
+This is an example of how a Pythonic human-\/readable docstring can get parsed by doxypypy and marked up with Doxygen commands as a regular input filter to Doxygen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & A positional argument. \\
+\hline
+{\em arg2} & Another positional argument.\\
+\hline
+{\em kwarg} & A keyword argument.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string holding the result.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Zero\+Division\+Error} & \\
+\hline
+{\em Assertion\+Error} & \\
+\hline
+{\em Value\+Error.} & \\
+\hline
+\end{DoxyExceptions}
+{\bfseries{Examples}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>>>\ myfunction(2,\ 3)}
+\DoxyCodeLine{\textcolor{stringliteral}{'5\ -\/\ 0,\ whatever.'}}
+\DoxyCodeLine{>>>\ myfunction(5,\ 0,\ \textcolor{stringliteral}{'oops.'})}
+\DoxyCodeLine{Traceback\ (most\ recent\ call\ last):}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{ZeroDivisionError:\ integer\ division\ \textcolor{keywordflow}{or}\ modulo\ by\ zero}
+\DoxyCodeLine{>>>\ myfunction(4,\ 1,\ \textcolor{stringliteral}{'got\ it.'})}
+\DoxyCodeLine{\textcolor{stringliteral}{'5\ -\/\ 4,\ got\ it.'}}
+\DoxyCodeLine{>>>\ myfunction(23.5,\ 23,\ \textcolor{stringliteral}{'oh\ well.'})}
+\DoxyCodeLine{Traceback\ (most\ recent\ call\ last):}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{AssertionError}
+\DoxyCodeLine{>>>\ myfunction(5,\ 50,\ \textcolor{stringliteral}{'too\ big.'})}
+\DoxyCodeLine{Traceback\ (most\ recent\ call\ last):}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{ValueError}
+
+\end{DoxyCode}
+ 
